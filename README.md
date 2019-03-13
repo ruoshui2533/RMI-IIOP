@@ -1,5 +1,7 @@
-javac
-rmic -iiop
-javac
-start orbd -ORBInitialPort
+javac *.java
+
+rmic -iiop Impl
+
+start orbd -ORBInitialPort xxxx
+
 java
